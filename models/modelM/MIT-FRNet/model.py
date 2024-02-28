@@ -2,11 +2,11 @@ import torch
 from torch import nn
 from torch.nn import Parameter
 import torch.nn.functional as F
-from models.missingTask.MIT-FRNet.alignment import Alignment
-from models.missingTask.MIT-FRNet.generator import Generator
+from models.modelM.MIT-FRNet.alignment import Alignment
+from models.modelM.MIT-FRNet.generator import Generator
 from models.subNets.BertTextEncoder import BertTextEncoder
-from models.missingTask.MIT-FRNet.fusion import Fusion
-from models.missingTask.MIT-FRNet.Utils import FocalLoss, make_weights_for_balanced_classes, SMLossAVT
+from models.modelM.MIT-FRNet.fusion import Fusion
+from models.modelM.MIT-FRNet.Utils import FocalLoss, make_weights_for_balanced_classes, SMLossAVT
 
 class CMD(nn.Module):
     def __init__(self):
